@@ -1,5 +1,44 @@
 
+  var swiper = new Swiper(".mySwiper", {
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	speed: 600,
+	parallax: true,
+	freeMode: true,
+	loop:true,
+	slidesPerView: 3,
+	spaceBetween: 0,
+	grabCursor: true,
+	breakpoints: {
+		1900: {
+			slidesPerView: 4,
+			spaceBetween: 0,
+		 },
 
+		1400: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		 },
+		 1200: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		 },
+		 900: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+			
+		 },
+
+		 320: {
+			slidesPerView: 1,
+			spaceBetween: 10,
+		 },
+	   }
+
+
+  });
 var swiper = new Swiper('.swiper-loop', {
 	loop: true,
 	autoplay: {
