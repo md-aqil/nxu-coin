@@ -1251,6 +1251,16 @@ margin: 0;
   background: var(--green);
 
 }
+.quarter-detail h4 {
+  font-weight: bold;
+}
+.quarter-detail p {
+  font-size: 16px;
+        color: #dfdfdf;
+        line-height: 1.5;
+        margin-top: 20px;
+        font-weight: 300;
+}
 .icon-hr-list img{
   width: 100px;
 }
