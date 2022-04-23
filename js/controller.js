@@ -299,9 +299,6 @@ $('.accordian .accordian-title').click(function() {
 	$(this).parents('li').find('.ac-detail-item').slideToggle();
 });
 
-
-
-
 $(window).scroll(function(){
 	var sticky = $('.sticky-header'),
 		scroll = $(window).scrollTop();
@@ -309,6 +306,18 @@ $(window).scroll(function(){
 	if (scroll >= 100) sticky.addClass('fixed');
 	else sticky.removeClass('fixed');
   });
+
+  
+$(function() {
+    $('a.page').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500);
+        event.preventDefault();
+    });
+});
+
 
 ScrollOut({
 
